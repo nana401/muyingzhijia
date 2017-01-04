@@ -1,0 +1,102 @@
+@charset "utf-8";
+body,ul,ol，dl,dd,dt,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,input{margin:0;padding:0;}
+body{font:12px "微软雅黑";}
+img{border:none;display:block}
+li{list-style:none;}
+input,select,textarea{outline:none;border:none;}
+textarea{resize:none;}
+a{text-decoration:none;}
+/* 清浮动 */
+.clearfix:after{content:" ";display:block;clear:both;}
+.clearfix{zoom:1;}
+.left{ float:left;}
+.right{ float:right;}
+.cont{width:1090px;margin:0 auto;}
+
+#header #header-middle{background:#fff;}
+#middle{width:100%;background:#ececec;padding:55px 0 40px 0;}
+#wrapper{background:#fff;width:1000px;margin:0 auto;}
+.sign-cont{display: block;border: 1px solid #d3d3d3;zoom: 1;padding: 40px 10px 10px;position: relative;height: 380px;background-color: #fff;}
+.register-form-height{height:480px;}
+.nav-sign{position: absolute;top: -38px;left: 42%;margin-left: -253px;}
+.nav-sign li{width:240px;line-height:35px;text-align: center;height:36px;border:1px solid #dedede;float: left;margin-left:10px;border-bottom: none;background:#f8f8f8;}
+.nav-sign li.selected{background:#fff;border-top:3px solid #f90;height:35px;}
+.nav-sign li.selected a{color:#ff5c00;}
+.nav-sign li a{font-size:14px;color:#979797;font-weight:bold;}
+.nav-sign li i{width:36px;height:20px;background:url(../data/img/res&log/register.png) no-repeat -216px -8px;display:inline-block;vertical-align: -6px;}
+.nav-sign li.selected i{width: 27px;height: 27px;background-position: -187px -2px;display: inline-block;vertical-align: -5px;}
+.sign-left{width:58%;float:left;}
+.sign-left form .formUl li{float: left;line-height:20px;min-height:63px;}
+.sign-left form label{display:block;float: left;padding-right:5px;font-size:12px;color:#666;}
+.sign-left form label.label{text-align:right;width:150px;height:35px;line-height:35px;}
+.sign-left form .formUl li .inputCont{position: relative;overflow: hidden;width: 320px;float: left;}
+.sign-left form .formUl li .inputCont input{width: 239px;vertical-align: baseline;padding: 7px 4px 6px;padding-right: 30px;height: 20px;font-size: 12px;border-width: 1px;}
+.sign-left form .formUl li .inputCont input.g-ipt{text-align: left;line-height: normal;margin: 0;vertical-align: middle;border: 1px solid #C1C1C1;font-size: 12px;height: 19px;color: #999999;padding: 7px 4px;ime-mode: disabled;}
+.sign-left form .formUl li .inputCont input.g-ipt-active{line-height:normal;margin:0px;vertical-align:middle;border:1px solid #ff9900;box-shadow:0 1px 1px rgba(0,0,0,0.075) inset,0 0px 8px rgba(255,120,0,0.6);outline:0 none;transition: border 0.2s linear 0s,box shadow 0.2s linear 0s;color:#999999;font-size:12px;height:14px;text-alian:left;padding:7px 4px;}
+.sign-left form .formUl li .inputCont input.g-ipt-err{text-align: left;line-height: normal;margin: 0;vertical-align: middle;font-size: 12px;height: 14px;border: 1px solid #e60000;color: #e60000;padding: 7px 4px;}
+.sign-left form .formUl li .inputCont input.g-ipt-cor{line-height: normal;margin: 0;vertical-align: middle;border: 1px solid #59A358;color: #196605;font-size: 12px;height: 14px;text-align: left;padding: 7px 4px;}
+.sign-left form .formUl li .inputCont .noticeWrap{line-height: 16px;color: #000;float: left;font-family: Verdana, arial, sans-serif;text-align: left;font-size: 12px;padding: 2px 5px 2px 2px;display: inline-block;vertical-align: middle;margin: 3px 0 0 6px;overflow: hidden;height: 16px;display: none;}
+.sign-left form .formUl li .inputCont .noticeWrap-err{border:1px solid #ff9900;background:#ffedb5;color:#e60000;border-radius:3px;}
+.sign-left form .formUl li .inputCont .noticeWrap-err .text-err{text-align: left;font-size: 12px;color: #f00;float: left;padding-left: 3px;line-height: 16px;}
+.sign-left form .formUl li .inputCont .noticeWrap-suc{float: none;}
+.sign-left form .formUl li .inputCont .noticeWrap-suc .text-succ{text-align: left;font-size: 12px;color: #0e931c;float: left;line-height: 16px;}
+.sign-left form .formUl li .inputCont .noticeWrap .icon-warn{line-height: 166.6%;color: #000;text-align: left;font-size: 14px;display: inline-block;vertical-align: middle;background: url("../data/img/res&log/onError.gif") no-repeat 0px 0px;width: 16px;height: 16px;padding: 0;margin-left: 2px;float: left;}
+.sign-left form .formUl li .inputCont .noticeWrap .icon-succ{line-height: 166.6%;color: #000;text-align: left;font-size: 14px;display: inline-block;vertical-align: middle;background: url("../data/img/res&log/onSuccess.gif") no-repeat -2px -3px;width: 16px;height: 16px;padding: 0 0 0 5px;float: left;}
+.sign-left form .formUl li .inputCont i{background:url(../data/img/res&log/register.png) no-repeat;}
+.sign-left form .formUl li .inputCont .email-icon{position: absolute;width: 34px;height: 28px;background-position: -120px 0px;display: block;top: 4px;left: 214px;}
+.sign-left form .formUl li .inputCont .pass-icon{position: absolute;width: 34px;height: 30px;background-position: -153px 0px;display: block;top: 2px;left: 214px;}
+.sign-left form .formUl li .inputCont .noticeWrap .codetxt{border: 1px solid #C1C1C1;}
+.sign-left form .formUl li .inputCont .codeWrap{overflow: hidden;}
+.sign-left form .formUl li .inputCont .agreeWrap{width:275px;float:left;}
+
+.inputCont .codeWrap .disabled{
+	background-position: -159px -151px;
+    height: 31px;
+    width: 113px;
+    margin-left: 10px;
+    border: none;
+    margin-top: 3px;
+}
+
+.sign-left form .formUl li .inputCont .codeWrap input{float:left;width:90px;height:19px;}
+.sign-left form .formUl li .inputCont .codetxt{border:1px solid #c1c1c1;}
+
+
+
+.sign-left form .formUl li .inputCont .codeWrap p{display: block;float: left;font-size: 12px;padding-top: 8px;}
+.sign-left form .formUl li .inputCont .codeWrap .codeChange{color: #00B8FF;cursor: pointer;}
+.sign-left form .formUl li .inputCont .codeWrap img{float: left;width: 98px;height: 35px;margin: 0px 5px 0;background: #ccc;}
+.sign-left form .formUl li .inputCont .messWrap input{float:left;width:90px;}
+.sign-left form .formUl li .inputCont #get-code{background:url(../data/img/res&log/register.png)no-repeat 0 0;height: 31px;width: 113px;margin-left: 10px;border: none;margin-top: 3px;cursor: pointer;outline: none;}
+.sign-left form .formUl li .inputCont .agreeWrap .checkbox{vertical-align: middle;margin-top: 11px;width: auto;height: auto;padding: 0;border: none;float: left;}
+.sign-left form .formUl li .inputCont .agreeWrap p{font-size: 12px;padding-left: 5px;line-height: 35px;}
+.sign-left form .formUl li .inputCont .tjBtn{width: 228px;height: 40px;border: none;background:url(../data/img/res&log/register.png) no-repeat 0 -31px; 0 -31px;cursor: pointer;}
+.otherwise{margin-left:156px;overflow: hidden;}
+.otherwise .sign-left-title{color: #4d4d4d;font-size: 12px;font-family: '\5b8b\4f53';}
+.otherwise .sign-left-list{margin-top:5px;}
+.otherwise .sign-left-list li{float:left;margin-right:10px;}
+.otherwise .sign-left-list li a{display: inline-block;width: 24px;height: 24px;background:url(../data/img/res&log/register.png);}
+.otherwise .sign-left-list li a.weibo{background-position: -2px -301px}
+.otherwise .sign-left-list li a.zhifubao{background-position: -28px -301px}
+.otherwise .sign-left-list li a.qq{background-position: -84px -301px}
+
+#footer .tfc_footer{background-color:#fff;}
+
+#send{
+	position:absolute;
+	top:330px;
+	left:166px;
+	display: none;
+}
+#send span{
+	display: inline-block;
+	color: red;
+}
+.sign-left form .formUl li .inputCont #get-code.disabled{
+	background-position: -159px -151px;
+    height: 31px;
+    width: 113px;
+    margin-left: 10px;
+    border: none;
+    margin-top: 3px;
+}

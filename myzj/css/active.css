@@ -1,0 +1,134 @@
+.conts{
+	width:1000px;
+	margin:0 auto;
+}
+.secSkillE-main {
+    margin-top: 10px;
+}
+.secSkillE-main .ac-goodsList ul{
+	width:1080px;
+	padding-bottom:10px;
+	margin:0 auto;
+}
+.secSkillE-main .ac-goodsList ul li{
+	zoom:1;
+	position:relative;
+	width:242px;
+	float:left;
+	background:#fff;
+	margin:0 10px 12px 0;
+	transition: all 0.3s;
+}
+.secSkillE-main .ac-goodsList ul li:hover{
+	transform: translateY(-10px);
+}
+
+
+.secSkillE-main .ac-goodsList ul li .main{
+	overflow:hidden;
+}
+.secSkillE-main .ac-goodsList ul li .main .img_box{
+	height:286px;
+}
+.secSkillE-main .ac-goodsList ul li .main .img_box .img_pic{
+	height:230px;
+	overflow:hidden;
+}
+.secSkillE-main .ac-goodsList ul li .main .img_box .img_pic a{
+	color:#fff;
+	text-decoration: none;
+	outline:none;
+}
+/* ul li .main .img_box .img_pic a img{
+	width:240px;
+	height:230px;
+} */
+.secSkillE-main .ac-goodsList ul li .main .img_box .img_pic span{
+	width:92px;
+	position:absolute;
+	left:50%;
+	top:50%;
+	margin-top:-46px;
+	margin-left:-46px;
+}
+.secSkillE-main .ac-goodsList ul li .main .img_box .img_pic span img{
+	display:block;
+	margin:0 auto;
+}
+.secSkillE-main .ac-goodsList ul li .main .img_box .img_info{
+	
+	padding:10px 90px 10px 10px;
+	color:#383838;
+	height:36px;
+}
+.secSkillE-main .ac-goodsList ul li .main .img_box .img_info p{
+	overflow:hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	margin-right:-10px;
+}
+
+.secSkillE-main .img-info a {
+    display: block;
+    color: #ff630a;
+}
+.secSkillE-main .ac-goodsList ul li .main .img_box .img_info p a{
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+	color: #ff630a;
+}
+.secSkillE-main .ac-goodsList ul li .main .price_box{
+	background:url(http://static.boodoll.cn/mall/v16/images/activePage/BtnBg_light.png) repeat;
+	display:block;
+	zoom:1;
+}
+.secSkillE-main .ac-goodsList ul li .main .price_box .price_f1{
+	color:#fff;
+	padding-left:14px;
+	line-height:38px;
+	font:18px/40px Arial,Verdana,"\5b8b\4f53";
+	display:block;
+	height:39px;
+}
+.secSkillE-main .ac-goodsList ul li .main .price_box .price_f1 i{
+	font-size:15px;
+	font-style:normal;
+	font-family: Verdana;
+	padding-right:2px;
+}
+.secSkillE-main .ac-goodsList ul li .main .price_box .price_f1 em{
+	font-style:normal;
+	font-weight:normal;
+}
+.secSkillE-main .ac-goodsList ul li .main .price_box .button{
+	display:block;
+	height:39px;
+	line-height:39px;
+}
+.secSkillE-main .ac-goodsList ul li .main .price_box .button a{
+	color:#fff;
+	font-size:13px;
+	display:block;
+	height:39px;
+	line-height:39px;
+	text-decoration: none;
+	outline:none;
+	cursor:pointer;
+}
+.saleOut-tip {
+    width: 92px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -46px;
+    margin-left: -46px;
+}
+.hide {
+    display: none;
+}
+.onloadingBg{
+	width: 240px;
+    height: 230px;
+    background: url(../data/img/common/loading.gif) no-repeat center;
+}

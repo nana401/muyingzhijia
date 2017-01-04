@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>母婴之家-【登录】</title>
+	<link rel="stylesheet" type="text/css" href="../css/common.css">
+	<link rel="stylesheet" type="text/css" href="../css/login.css">
+	
+</head>
+<body>
+	<div id="header">
+		<div id="header-top"></div>
+		<div id="header-middle"><div class="cont"></div></div>
+	</div>
+	<div id="middle">
+		<div class="cont">
+			<div id="wrapper">
+				<div class="sign-cont">
+					<div class="nav-sign">
+						<ul class="clearfix">
+							<li><a href="register.html" target="_self"><i></i>注册</a></li>
+							<li class="selected"><a href="login.html" target="_self"><i></i>登录</a></li>
+						</ul>
+					</div>
+					<div class="sign-left login-right">
+					<form id="login-form">
+					<ul class="clearfix formUl login-form">
+						<li>
+							<label class="label" for='email'>账户名：</label>
+							<div class="inputCont">
+								<input class="g-ipt" type="text" placeholder="请填入手机号码" id="email" is_jump="jp" types="txt">
+								<p id="warn-email" class="noticeWrap">
+									<b class="icon-warn"></b>
+									<span class="text-err">手机号格式不对，请重新输入</span>
+								</p>
+								<i class="email-icon login-icon"></i>
+							</div>
+						</li>
+						<li>
+							<label class="label" for='password'>密码：</label>
+							<div class="inputCont">
+								<input class="g-ipt" type="password" placeholder="请输入密码" id="password" is_jump="jp" types="txt">
+								<p id="warn-pass" class="noticeWrap">
+									<b class="icon-warn"></b>
+									<span class="text-err">密码长度限制为6-20位字符</span>
+								</p>
+								<i class="pass-icon login-icon"></i>
+							</div>
+						</li>
+						
+						<li class="show">
+							<label class="label" for='yzm'>验证码：</label>
+							<div class="inputCont">
+								<div class="codeWrap">
+								<input type="text" class="codetxt" id="yzm" is_jump="jp"  types="txt">
+								<img src="../data/img/Registercode/code1.png" alt="看不清，点击换一张" title="看不清，点击换一张" class="codeChange" id="codeimgChang">
+								<p>
+									看不清？<a class="codeChange" href="javascript:;">换一张</a>
+								</p>
+								<div class="noticeWrap">
+									<b class="icon-warn"></b>
+									<span class="text-err">图片验证码格式错误</span>
+								</div>
+								</div>
+							</div>
+						</li>
+						
+						<li style="min-height:20px">
+							<label class="label">&nbsp;</label>
+							<div class="inputCont">
+								<div class="agreeWrap">
+									<input type="checkbox" class="checkbox" id="remember">
+									<label for="remember">
+										记住我（30天免登录）<a href="javascript:;">忘记密码？</a>
+									</label>
+									</div>	
+							</div>
+						</li>
+						
+						<li class="submit-area">
+							<label class="label">&nbsp;</label>
+							<div class="inputCont">
+								<div>
+									<input type="button" value="" class="submit-signin" id="login-btn">
+								<div>
+								<div class="noticeWrap">
+									<b class="icon-warn"></b>
+									<span class="text-err">请求超时</span>
+								</div>
+							</div>
+						</li>
+						</ul>	
+					</form>
+					<div class="otherwise">
+							<div class="sign-left-title">使用合作网站账号登录母婴之家</div>
+							<ul class="sign-left-list">
+								<li class="otherCont"><a class="weibo"></a></li>
+								<li class="otherCont"><a class="zhifubao"></a></li>
+								<li class="otherCont"><a class="qq"></a></li>
+							</ul>
+						</div>
+				</div>
+				<div class="sign-right login-left">
+					<a href="javascript:;">
+						<img src=" http://img.muyingzhijia.com/product/web/toutu/150211-340x300-2.jpg" alt="下载注册" title="下载注册">
+					</a>
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="footer"></div>
+</body>
+<script src="../libs/sea.js"></script>
+<script>
+	seajs.config({
+			alias:{
+			"jq":'jquery-1.11.3',
+			"cookie":'jquery.cookie'
+		}
+	})
+	seajs.use('../script/login');
+</script>
+</html>

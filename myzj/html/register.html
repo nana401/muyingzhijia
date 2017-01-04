@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>母婴之家-【注册】</title>
+	<link rel="stylesheet" type="text/css" href="../css/common.css">
+	<link rel="stylesheet" type="text/css" href="../css/register.css">
+</head>
+<body>
+<div id="header">
+	<div id="header-top"></div>
+	<div id="header-middle"><div class="cont"></div></div>
+</div>
+<div id="middle">
+	<!-- <div id="resgieter-header"> -->
+		<div class="cont">
+			<div id="wrapper"> 
+			<div class="sign-cont register-form-height">
+				<div class="nav-sign">
+					<ul class="clearfix">
+						<li class="selected"><a href="register.html" target="_self"><i></i>注册</a></li>
+						<li><a href="login.html" target="_self"><i></i>登录</a></li>
+					</ul>
+				</div>
+				<div class="sign-left">
+					<form id="register-form">
+					<ul class="clearfix formUl">
+						<li>
+							<label class="label" for='email'>手机号：</label>
+							<div class="inputCont clearfix">
+								<input class="g-ipt" type="text" types="txt" is_jump="jp" placeholder="请输入手机号" id="email">
+								<p id="warn-email" class="noticeWrap">
+									<b class="icon-warn"></b>
+									<span class="text-err">手机号格式不对，请重新输入</span>
+								</p>
+								<i class="email-icon"></i>
+							</div>
+						</li>
+						<li>
+							<label class="label" for='password'>请设置密码：</label>
+							<div class="inputCont">
+								<input class="g-ipt" type="password" is_jump="jp" placeholder="请输入密码" id="password" types="txt">
+								<p id="warn-pass" class="noticeWrap">
+									<b class="icon-warn"></b>
+									<span class="text-err">密码长度限制为6-20位字符</span>
+								</p>
+								<i class="pass-icon"></i>
+							</div>
+						</li>
+						<li>
+							<label class="label" for='pass-agin'>请确认密码：</label>
+							<div class="inputCont">
+								<input class="g-ipt" type="password" placeholder="请再次输入密码" id="pass-agin" types="txt" is_jump="jp">
+								<p id="warn-passagin" class="noticeWrap">
+									<b class="icon-warn"></b><!-- icon-suc -->
+									<span class="text-err">重复密码不能为空，请确认</span>
+								</p>
+								<i class="pass-icon"></i>
+							</div>
+						</li>
+						<li class="check-code">
+							<label class="label" for='yzm'>验证码：</label>
+							<div class="inputCont">
+								<div class="codeWrap">
+								<input type="text" class="codetxt" id="yzm" types="txt" is_jump="jp">
+								<img src="../data/img/Registercode/code1.png" alt="看不清，点击换一张" title="看不清，点击换一张" class="codeChange" id="codeimgChang">
+								<p>
+									看不清？<a class="codeChange" href="javascript:;">换一张</a>
+								</p>
+								<div class="noticeWrap">
+									<b class="icon-warn"></b>
+									<span class="text-err">图片验证码格式错误</span>
+								</div>
+
+								</div>
+							</div>
+						</li>
+						<li class="mobile-code">
+							<label class="label" for='message'>短信验证码：</label>
+							<div class="inputCont">
+								<div class="codeWrap">
+								<input type="text" class="codetxt" id="messyzm" types="txt" is_jump="jp"><!-- g-ip-active -->
+								<input type="button" id="get-code">
+								<div class="noticeWrap">
+									<b class="icon-warn"></b>
+									<span class="text-err">短信验证码格式错误</span>
+                                    
+								</div>
+
+								</div>
+							</div>
+							<div id="send">验证码已发送<span class="times">60</span>s后重新发送</div>
+						</li>
+						<li style="min-height:20px">
+							<label class="label">&nbsp;</label>
+							<div class="inputCont">
+								<div class="agreeWrap">
+									<input type="checkbox" class="checkbox" id="agreement" is_jump="jp">
+									<label for="agreement">
+										<p>阅读并同意<a href="javascript;:">母婴之家网站用户协议</a></p>
+									</label>
+								<div>
+								<div class="noticeWrap">
+									<b class="icon-warn"></b>
+									<span class="text-err">您还没有同意用户协议</span>
+								</div>
+							</div>
+						</li>
+						
+						<li class="submit-area">
+							<label class="label">&nbsp;</label>
+							<div class="inputCont">
+								<div>
+									<input type="button" value="" class="tjBtn" id="registerBtn">
+								<div>
+								<div class="noticeWrap">
+									<b class="icon-warn"></b>
+									<span class="text-err">请求超时</span>
+								</div>
+							</div>
+						</li>
+						</ul>
+						<div class="otherwise">
+							<div class="sign-left-title">使用合作网站账号登录母婴之家</div>
+							<ul class="sign-left-list">
+								<li class="otherCont"><a class="weibo"></a></li>
+								<li class="otherCont"><a class="zhifubao"></a></li>
+								<li class="otherCont"><a class="qq"></a></li>
+							</ul>
+						</div>
+					</form>
+				</div>
+				<div class="sign-right">
+					<a href="javascript:;"><img src="../data/img/res&log/APPzhuce.jpg" alt="新人注册APP三重礼" title="新人注册APP三重礼"></a>
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<div id="footer"></div>
+</body>
+<script src="../libs/sea.js"></script>
+<script>
+	seajs.config({
+			alias:{
+			"jq":'jquery-1.11.3',
+			"cookie":'jquery.cookie'
+		}
+	})
+	seajs.use('../script/register');
+</script>
+</html>
